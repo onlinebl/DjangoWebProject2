@@ -1,0 +1,15 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+{% load staticfiles %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+<p>
+    <a href ="https://mail.ru"  target="_blank"> <img src="{% static 'app/content/1.jpeg' %}" alt="logo1"/></a> <br />
+    <a href ="https://www.coursera.org"  target="_blank"> <img src="{% static 'app/content/2.jpg' %}" alt="logo2"/></a> <br />
+    <a href ="https://elibrary.ru"  target="_blank"> <img src="{% static 'app/content/3.jpg' %}" alt="logo3"/></a> <br />
+</p>
+
+{% endblock %}
